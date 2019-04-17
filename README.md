@@ -1,7 +1,7 @@
 # UnscentedKalmanFilter
 Unscented implementation
 
-1 Prediction
+##1 Prediction
 
   a Generate Sigma Points
 
@@ -9,8 +9,10 @@ Unscented implementation
 
   c Predict Mean and Covariance
 
-2 Update
+##2 Update
 
   a Predict Measurement
-
-  b Update State
+  if (lidar)
+    b Update Lidar State 
+  if (radar)
+    b. Update Radar State
